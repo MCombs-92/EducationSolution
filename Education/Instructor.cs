@@ -13,6 +13,15 @@ namespace Education {
 		public string Email { get; set; }
 		public string Phone { get; set; }
 
+		public Assignment CreateAssignment(string name, string AssignmentId) {
+			Assignment asgn = new Assignment();
+			asgn.Comments = null;
+			asgn.Grade = null;
+			asgn.Name = name;
+			asgn.AssignmentId = AssignmentId;
+			return asgn;
+		}
+
 
 	}
 }

@@ -27,19 +27,32 @@ namespace Education {
 			Student Foster = new Student();
 			Foster.Absences = 0;
 			Foster.ContactInfo = "Call Foster...";
-			Foster.FirstJob = DateTime.MinValue;
+			Foster.FirstJob = null;
 			Foster.Name = "Foster";
 			Foster.Class = dotnetbc4;
+
 
 			Student JJ = new Student();
 			JJ.Absences = 0;
 			JJ.ContactInfo = "Call Jon...";
-			JJ.FirstJob = DateTime.MinValue;
+			JJ.FirstJob = null;
 			JJ.Name = "Jonathan";
 			JJ.Class = dotnetbc4;
 
 			dotnetbc4.Students.Add(Foster);
 			dotnetbc4.Students.Add(JJ);
+
+			Assignment as1 = Dan.CreateAssignment("First Fundamentals assignment", "Fundamentals 12");
+			dotnetbc4.DistributeAssignment(as1);
+
+			//Assignment as1 = new Assignment();
+			//as1.AssignmentId = "Fundamentals12";
+			//as1.Comments = null;
+			//as1.Grade = null;
+			//as1.Name = "First Fundamentals Assignment";
+
+			//Foster.Assignments.Add(as1);
+			//JJ.Assignments.Add(as1);
 
 
 		}
