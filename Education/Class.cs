@@ -18,6 +18,8 @@ namespace Education {
 			set {
 				if(value == "CSharp" || value == "Java") {
 					_Language = value;
+				} else {
+					throw new ApplicationException("Language must be CSharp or Java");
 				}
 				
 			}
@@ -39,7 +41,15 @@ namespace Education {
 				student.Assignments.Add(asgn);
 				
 			}
-
+			try {
+				int x = 0;
+				int y = 1 / x;
+			} catch(DivideByZeroException ex) {
+				Console.WriteLine(ex.Message);
+				Console.ReadLine();
+			} catch(Exception ex) {
+				throw ex;
+			}
 		}
 	}
 }

@@ -19,7 +19,7 @@ namespace Education {
 			Class dotnetbc4 = new Class();
 			dotnetbc4.Capacity = 16;
 			dotnetbc4.Code = "DN4";
-			dotnetbc4.Language = "CSharp";
+			dotnetbc4.Language = "CSharpx";
 			dotnetbc4.Name = "Dont Net Boot Camp 4";
 			dotnetbc4.Instructor = Dan;
 
